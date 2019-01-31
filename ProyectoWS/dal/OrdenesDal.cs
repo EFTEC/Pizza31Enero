@@ -4,18 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProyectoWS.dal
+namespace ProyectoWS.DAL
 {
     public class OrdenesDal
     {
-        public static List<ORDENES> Listar()
+        public static List<ORDENES> ListarOrdenes()
         {
             using (var model2 = new Model2())
             {
                 return model2.ORDENES.ToList();
             }
         }
-        public static void Insertar(ORDENES ordenes)
+        public static void InsertarOrdenes(ORDENES ordenes)
         {
             using (var model2 = new Model2())
             {
