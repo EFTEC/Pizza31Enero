@@ -8,14 +8,14 @@ namespace ProyectoWS.DAL
 {
     public class OrdenesDal
     {
-        public static List<ORDENES> listar()
+        public static List<ORDENES> ListarOrdenes()
         {
             using (var model2 = new Model2())
             {
                 return model2.ORDENES.ToList();
             }
         }
-        public static void Insertar(ORDENES ordenes)
+        public static void InsertarOrdenes(ORDENES ordenes)
         {
             using (var model2 = new Model2())
             {

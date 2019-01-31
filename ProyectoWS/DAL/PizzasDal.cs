@@ -8,7 +8,7 @@ namespace ProyectoWS.DAL
 {
     public class PizzasDal
     {
-        public static List<PIZZAS> listar()
+        public static List<PIZZAS> ListarPizzas()
         {
             using (var model2 = new Model2())
             {

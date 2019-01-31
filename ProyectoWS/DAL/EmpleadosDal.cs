@@ -8,14 +8,14 @@ namespace ProyectoWS.DAL
 {
     public class EmpleadosDal
     {
-        public static List<EMPLEADOS> listar()
+        public static List<EMPLEADOS> LeerEmpleado()
         {
             using (var model2 = new Model2())
             {
                 return model2.EMPLEADOS.ToList();
             }
         }
-        public static void Insertar(EMPLEADOS empleado)
+        public static void ListarEmpleado(EMPLEADOS empleado)
         {
             using (var model2 = new Model2())
             {
