@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoWeb.EmpleadosServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,12 +14,17 @@ namespace ProyectoWeb.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public ActionResult Login()
         {
-            return View();
+            EMPLEADOS emp = new EMPLEADOS();
+            return View(emp);
         }
-
+        [HttpPost]
+        public ActionResult Login(EMPLEADOS emp)
+        {
+            return View(emp);
+        }
         public ActionResult PantallaInicial()
         {
             return View();
