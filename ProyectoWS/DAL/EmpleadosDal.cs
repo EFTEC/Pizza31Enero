@@ -8,11 +8,13 @@ namespace ProyectoWS.DAL
 {
     public class EmpleadosDal
     {
-        public static List<EMPLEADOS> LeerEmpleado()
+        public static EMPLEADOS LeerEmpleado(String usuario)
         {
-            using (var model2 = new Model2())
+            var emp = new EMPLEADOS();
+            using (var grupo = new Model2())
             {
-                return model2.EMPLEADOS.ToList();
+                emp = grupo.EMPLEADOS.Where(e => e.USUARIO == usuario).First();
+                return emp;
             }
         }
         public static void ListarEmpleado(EMPLEADOS empleado)
