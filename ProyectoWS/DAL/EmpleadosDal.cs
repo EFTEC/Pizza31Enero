@@ -8,7 +8,7 @@ namespace ProyectoWS.DAL
 {
     public class EmpleadosDal
     {
-        public static EMPLEADOS LeerEmpleado(String usuario)
+        public static List<EMPLEADOS> LeerEmpleado()
         {
             var emp = new EMPLEADOS();
             using (var grupo = new Model2())
@@ -17,12 +17,11 @@ namespace ProyectoWS.DAL
                 return emp;
             }
         }
-        public static void ListarEmpleado(EMPLEADOS empleado)
+        public static List<EMPLEADOS> ListarEmpleado()
         {
             using (var model2 = new Model2())
             {
-                model2.EMPLEADOS.Add(empleado);
-                model2.SaveChanges();
+                return model2.EMPLEADOS.ToList();
             }
         }
     }
