@@ -122,6 +122,12 @@
     <Folder Include="Models\" />
     <Folder Include="Views\Clientes\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoWS\ProyectoWS.csproj">
+      <Project>{c1f849e3-cdb4-4c00-a4d1-944f44d0973e}</Project>
+      <Name>ProyectoWS</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
