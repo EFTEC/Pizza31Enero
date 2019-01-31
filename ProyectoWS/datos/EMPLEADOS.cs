@@ -12,7 +12,7 @@ namespace ProyectoWS.datos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public EMPLEADOS()
         {
-            ORDENES = new HashSet<ORDENES>();
+            //ORDENES = new HashSet<ORDENES>();
         }
 
         [Key]
@@ -22,7 +22,7 @@ namespace ProyectoWS.datos
         [StringLength(50)]
         public string CLAVE { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ORDENES> ORDENES { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<ORDENES> ORDENES { get; set; }
     }
 }
