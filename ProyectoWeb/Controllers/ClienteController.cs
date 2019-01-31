@@ -6,25 +6,20 @@ using System.Web.Mvc;
 
 namespace ProyectoWeb.Controllers
 {
-    public class EmpleadoController : Controller
+    public class ClienteController : Controller
     {
-        // GET: Empleado
+        // GET: Cliente
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Login()
+        public ActionResult ListarClientes()
         {
             return View();
         }
 
-        public ActionResult PantallaInicial()
-        {
-            return View();
-        }
-
-        public ActionResult ListarEmpleados()
+        public ActionResult IngresarCliente()
         {
             return View();
         }

@@ -93,7 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
+    <Compile Include="Controllers\PizzaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -104,6 +106,10 @@
     <None Include="packages.config" />
     <Content Include="Views\Empleado\Login.cshtml" />
     <Content Include="Views\Empleado\PantallaInicial.cshtml" />
+    <Content Include="Views\Empleado\ListarEmpleados.cshtml" />
+    <Content Include="Views\Cliente\ListarClientes.cshtml" />
+    <Content Include="Views\Cliente\IngresarCliente.cshtml" />
+    <Content Include="Views\Pizza\IngresarOrden.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
