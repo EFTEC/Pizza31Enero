@@ -10,17 +10,18 @@ namespace ProyectoWS.DAL
     {
         public static List<EMPLEADOS> LeerEmpleado()
         {
-            using (var model2 = new Model2())
+            var emp = new EMPLEADOS();
+            using (var grupo = new Model2())
             {
-                return model2.EMPLEADOS.ToList();
+                emp = grupo.EMPLEADOS.Where(e => e.USUARIO == usuario).First();
+                return emp;
             }
         }
-        public static void ListarEmpleado(EMPLEADOS empleado)
+        public static List<EMPLEADOS> ListarEmpleado()
         {
             using (var model2 = new Model2())
             {
-                model2.EMPLEADOS.Add(empleado);
-                model2.SaveChanges();
+                return model2.EMPLEADOS.ToList();
             }
         }
     }
