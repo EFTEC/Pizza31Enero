@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProyectoWS.DAL
+namespace ProyectoWS.dal
 {
-    public class PizzasDal
+    public class EmpleadoDal
     {
-        public static List<PIZZAS> ListarPizzas()
+        public static List<EMPLEADOS> Listar()
         {
             using (var model2 = new Model2())
             {
-                return model2.PIZZAS.ToList();
+                return model2.EMPLEADOS.ToList();
             }
         }
+
     }
 }
