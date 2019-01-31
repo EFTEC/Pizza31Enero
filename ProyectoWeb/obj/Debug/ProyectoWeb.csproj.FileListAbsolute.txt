@@ -186,16 +186,12 @@ C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\roslyn\VBCSCompiler.exe
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\roslyn\VBCSCompiler.exe.config
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
-C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\ProyectoWS.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Helpers.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Mvc.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Razor.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.Deployment.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.dll
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.Razor.dll
-C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\EntityFramework.dll
-C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\ProyectoWS.pdb
-C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\ProyectoWS.dll.config
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Razor.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.Deployment.xml
@@ -203,7 +199,6 @@ C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Webpages.Razor.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Helpers.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\System.Web.Mvc.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\David_Proyectos\Pizza31Enero\ProyectoWeb\bin\EntityFramework.xml
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\obj\Debug\ProyectoWeb.csprojAssemblyReference.cache
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\obj\Debug\ProyectoWeb.csproj.CoreCompileInputs.cache
 C:\David_Proyectos\Pizza31Enero\ProyectoWeb\obj\Debug\ProyectoWeb.csproj.CopyComplete

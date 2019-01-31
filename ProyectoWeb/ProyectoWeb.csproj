@@ -46,6 +46,8 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -88,11 +90,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ClientesServiceReference\ClientesWS.wsdl" />
+    <Content Include="Connected Services\ClientesServiceReference\ProyectoWeb.ClientesServiceReference.CLIENTES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ClientesServiceReference\ProyectoWeb.ClientesServiceReference.InsertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ClientesServiceReference\ProyectoWeb.ClientesServiceReference.ListarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\EmpleadosServiceReference1\EmpleadosWS.wsdl" />
+    <None Include="Connected Services\ClientesServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ClientesServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\ClientesServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\EmpleadosServiceReference1\ProyectoWeb.EmpleadosServiceReference1.EMPLEADOS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EmpleadosServiceReference1\ProyectoWeb.EmpleadosServiceReference1.LeerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\EmpleadosServiceReference1\ProyectoWeb.EmpleadosServiceReference1.ListarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\OrdenesServiceReference2\OrdenesWS.wsdl" />
+    <None Include="Connected Services\EmpleadosServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\EmpleadosServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\EmpleadosServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\OrdenesServiceReference2\ProyectoWeb.OrdenesServiceReference2.InsertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\OrdenesServiceReference2\ProyectoWeb.OrdenesServiceReference2.ListarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\OrdenesServiceReference2\ProyectoWeb.OrdenesServiceReference2.ORDENES.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PizzasServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\PizzasServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\OrdenesServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\OrdenesServiceReference2\configuration.svcinfo" />
+    <None Include="Connected Services\OrdenesServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\PizzasServiceReference1\ProyectoWeb.PizzasServiceReference1.ListarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\PizzasServiceReference1\ProyectoWeb.PizzasServiceReference1.PIZZAS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PizzasServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\ClientesServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\EmpleadosServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\OrdenesServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\PizzasServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
     <Compile Include="Controllers\PizzaController.cs" />
@@ -103,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <None Include="Connected Services\PizzasServiceReference1\PizzasWS.wsdl" />
     <None Include="packages.config" />
     <Content Include="Views\Empleado\Login.cshtml" />
     <Content Include="Views\Empleado\PantallaInicial.cshtml" />
@@ -124,6 +207,18 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoWS\ProyectoWS.csproj">
+      <Project>{c1f849e3-cdb4-4c00-a4d1-944f44d0973e}</Project>
+      <Name>ProyectoWS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ClientesServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\EmpleadosServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\OrdenesServiceReference2\" />
+    <WCFMetadataStorage Include="Connected Services\PizzasServiceReference1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
