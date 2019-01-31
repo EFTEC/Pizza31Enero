@@ -4,22 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProyectoWS.dal
+namespace ProyectoWS.DAL
 {
     public class ClientesDal
     {
-        public static List<CLIENTES> Listar()
+        public static List<CLIENTES> listar()
         {
-            using(var model2=new Model2())
+            using (var model2 = new Model2())
             {
                 return model2.CLIENTES.ToList();
             }
         }
         public static void Insertar(CLIENTES cliente)
         {
-            using(var model2=new Model2())
+            using (var model2 = new Model2())
             {
-                 model2.CLIENTES.Add(cliente);
+                model2.CLIENTES.Add(cliente);
                 model2.SaveChanges();
             }
         }
