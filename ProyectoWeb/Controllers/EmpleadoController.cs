@@ -23,5 +23,10 @@ namespace ProyectoWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult ListarEmpleados()
+        {
+            return View();
+        }
     }
 }
