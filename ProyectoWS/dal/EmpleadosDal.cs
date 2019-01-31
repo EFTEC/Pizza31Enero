@@ -8,7 +8,7 @@ namespace ProyectoWS.DAL
 {
     public class EmpleadosDal
     {
-        public static List<EMPLEADOS> LeerEmpleado()
+        public static EMPLEADOS LeerEmpleado(string usuario)
         {
             var emp = new EMPLEADOS();
             using (var grupo = new Model2())
