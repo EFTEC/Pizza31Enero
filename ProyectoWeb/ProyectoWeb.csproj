@@ -104,6 +104,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Empleado\Login.cshtml" />
     <Content Include="Views\Empleado\PantallaInicial.cshtml" />
+    <Content Include="Views\Empleado\ListarEmpleados.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
